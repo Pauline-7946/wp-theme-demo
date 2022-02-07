@@ -19,7 +19,7 @@ Template Name: Gabarit accueil
     */
 
     $args = array(
-        'category_not_in' => 1
+        'category__not_in' => 1
     ); 
 
     $query = new WP_Query($args);
@@ -49,7 +49,7 @@ Template Name: Gabarit accueil
                         <div class="texte-article trois-quart">
 
                             <h3><?php the_title(  ); ?></h3>
-                            <p><?php the_excerpt(  ); ?><a href="<php the_permalik( )?php>"> En savoir plus...</a></p>
+                            <p><?php the_excerpt(  ); ?><a href="<?php the_permalink( )?>"> En savoir plus...</a></p>
 
                         </div>
                     </article>

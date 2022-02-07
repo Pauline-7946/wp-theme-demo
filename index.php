@@ -2,7 +2,7 @@
 
     <?php if (is_archive()) : ?>
 
-        <h2><?php echo esc_html(get_the_category(  )[0])->name) ?></h2>
+        <h2><?php echo esc_html(get_the_category(  )[0]->name) ?></h2>
 
     <?php else : ?>
 
@@ -34,8 +34,8 @@
 
                         <div class="texte-article trois-quart">
 
-                            <h3><?php the_title(  ); ?></h3>
-                            <p><?php the_excerpt(  ); ?><a href="<php the_permalik( )?php>"> En savoir plus...</a></p>
+                            <h3><?php the_title(  ) ?></h3>
+                            <p><?php the_excerpt(  ) ?><a href="<?php the_permalink( )?>"> En savoir plus...</a></p>
 
                         </div>
                     </article>

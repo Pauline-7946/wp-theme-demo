@@ -10,7 +10,7 @@
 
     <section class="quart sidebar">
 
-    <!-- Sidebar -->
+    <?php get_sidebar(  );?>
 
     </section>
 
